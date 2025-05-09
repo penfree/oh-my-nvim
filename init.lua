@@ -14,9 +14,9 @@ if not vim.loop.fs_stat(lazypath) then
 	})
 end
 vim.opt.rtp:prepend(lazypath)
-# 使用系统剪切板
+-- 使用系统剪切板
 vim.opt.clipboard = "unnamedplus"
-# 使用相对行号
+-- 使用相对行号
 vim.opt.relativenumber = true
 
 vim.g.mapleader = require("custom_keys").leader
